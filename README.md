@@ -82,7 +82,7 @@ For revision 5/6 PDFs, additional fields are appended:
 cargo test
 ```
 
-Tests verify output against the reference hash in [docs/example.txt](docs/example.txt) extracted from [docs/example.pdf](docs/example.pdf).
+Tests verify output against the reference hash in [docs/example.txt](docs/example.txt) extracted from [docs/example.pdf](docs/example.pdf). Test vectors not provided. Tested on my own PDFs... and no you can't have the passwords.
 
 ## License
 
