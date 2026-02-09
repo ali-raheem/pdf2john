@@ -1,0 +1,10 @@
+[package]
+name = "pdf2john"
+version = "0.1.0"
+edition = "2024"
+license-file = "LICENSE"
+
+[dependencies]
+lopdf = "0.38"
+hex = "0.4"
+
