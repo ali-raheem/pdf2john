@@ -1,6 +1,6 @@
 # pdf2john
 
-A Rust tool that extracts password hashes from encrypted PDF files for use with [John the Ripper](https://www.openwall.com/john/).
+A Rust tool that extracts password hashes from encrypted PDF files for use with [John the Ripper](https://www.openwall.com/john/) and [hashcat](https://hashcat.net/hashcat/).
 
 This is a rewrite of the Python [pdf2john](https://github.com/openwall/john/blob/bleeding-jumbo/run/pdf2john.py) script, producing identical output.
 
