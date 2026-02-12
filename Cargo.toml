@@ -1,13 +1,13 @@
 [package]
 name = "pdf2john"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license-file = "LICENSE"
 authors = ["Ali Raheem"]
-description = "Extract a hash from an ecrypted PDF for cracking with John the Ripper or Hashcat"
+description = "Extract a hash from an encrypted PDF for cracking with John the Ripper or Hashcat"
 repository = "https://github.com/ali-raheem/pdf2john"
 
 [dependencies]
-lopdf = "0.38"
+lopdf = { version = "0.38", default-features = false }
 hex = "0.4"
 

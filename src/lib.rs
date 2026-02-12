@@ -183,11 +183,38 @@ mod tests {
     }
 
     #[test]
-    fn test_example_pdf() {
-        let extractor = PdfHashExtractor::from_file("docs/example.pdf")
-            .expect("Failed to extract hash from example.pdf");
+    fn test_r2_rc4_40() {
+        let extractor = PdfHashExtractor::from_file("docs/r2_rc4_40.pdf")
+            .expect("Failed to extract hash from r2_rc4_40.pdf");
         let hash = extractor.format_hash();
-        let expected = include_str!("../docs/example.txt").trim();
+        let expected = include_str!("../docs/r2_rc4_40.txt").trim();
+        assert_eq!(hash, expected);
+    }
+
+    #[test]
+    fn test_r3_rc4_128() {
+        let extractor = PdfHashExtractor::from_file("docs/r3_rc4_128.pdf")
+            .expect("Failed to extract hash from r3_rc4_128.pdf");
+        let hash = extractor.format_hash();
+        let expected = include_str!("../docs/r3_rc4_128.txt").trim();
+        assert_eq!(hash, expected);
+    }
+
+    #[test]
+    fn test_r4_aes_128() {
+        let extractor = PdfHashExtractor::from_file("docs/r4_aes_128.pdf")
+            .expect("Failed to extract hash from r4_aes_128.pdf");
+        let hash = extractor.format_hash();
+        let expected = include_str!("../docs/r4_aes_128.txt").trim();
+        assert_eq!(hash, expected);
+    }
+
+    #[test]
+    fn test_r6_aes_256() {
+        let extractor = PdfHashExtractor::from_file("docs/r6_aes_256.pdf")
+            .expect("Failed to extract hash from r6_aes_256.pdf");
+        let hash = extractor.format_hash();
+        let expected = include_str!("../docs/r6_aes_256.txt").trim();
         assert_eq!(hash, expected);
     }
 }
